@@ -1,11 +1,5 @@
 # cypress-cucumber
 
-## Config Environment
-
-```bash
-cp .env.example .env
-```
-
 ## Install 
 
 ```bash
