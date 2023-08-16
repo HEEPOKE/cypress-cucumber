@@ -1,7 +1,10 @@
 import { Given, When, Then } from "cypress-cucumber-preprocessor/steps";
+import Config from "../config/config";
+
+const url = Config.URL ?? "";
 
 Given("I open the YouTube website", () => {
-  cy.visit("https://www.youtube.com/");
+  cy.visit(url);
 });
 
 When("I search for {string}", (searchQuery: string) => {

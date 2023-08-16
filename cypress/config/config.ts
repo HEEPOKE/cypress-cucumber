@@ -4,8 +4,8 @@ dotenv.config();
 
 const { URL } = process.env;
 
-const config = {
+const Config = {
     URL,
 }
 
-export default config;
+export default Config;
