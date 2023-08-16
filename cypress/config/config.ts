@@ -1,11 +1,9 @@
-import * as dotenv from "dotenv";
-
-dotenv.config();
-
-const { URL } = process.env;
-
-const Config = {
-    URL,
+interface ConfigInterface {
+  url: string;
 }
+
+const Config: ConfigInterface = {
+  url: "https://www.youtube.com",
+};
 
 export default Config;
