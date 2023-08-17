@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "ESNext",
+    "lib": ["ESNext", "dom"],
+    "types": [
+      "cypress",
+      "node"
+      // "cypress-dark"
+      // "cypress-cucumber-preprocessor",
+      // "cucumber"
+    ]
+  },
+  "include": ["**/*.ts", "**/*.feature", "../typings.d.ts"]
+}
