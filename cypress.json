@@ -1,0 +1,3 @@
+{
+  "testFiles": "cypress/features/**/*.feature"
+}

@@ -1,6 +1,6 @@
 # cypress-cucumber
 
-## Install 
+## Install
 
 ```bash
 yarn
