@@ -1,4 +1,7 @@
 const { defineConfig } = require("cypress");
+const createBundler = require("@bahmutov/cypress-esbuild-preprocessor");
+const cucumber = require("@badeball/cypress-cucumber-preprocessor");
+const { createEsbuildPlugin } = require("@badeball/cypress-cucumber-preprocessor/esbuild");
 
 module.exports = defineConfig({
   e2e: {
@@ -11,6 +14,18 @@ module.exports = defineConfig({
     viewportHeight: 1080,
     env: {
       baseUrl: "https://www.youtube.com",
+    },
+    async setupNodeEvents(on, config) {
+      await cucumber.addCucumberPreprocessorPlugin(on, config);
+
+      on(
+        "file:preprocessor",
+        createBundler({
+          plugins: [createEsbuildPlugin(config)],
+        })
+      );
+
+      return config;
     },
   },
 });

@@ -12,10 +12,12 @@
     "cypress"
   ],
   "cypress-cucumber-preprocessor": {
-    "nonGlobalStepDefinitions": true
+    "nonGlobalStepDefinitions": true,
+    "step_definitions": "cypress/e2e/*.{js,ts}"
   },
   "devDependencies": {
-    "cypress": "^12.17.4",
-    "cypress-cucumber-preprocessor": "^4.3.1"
+    "@badeball/cypress-cucumber-preprocessor": "^18.0.4",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.0",
+    "cypress": "^12.17.4"
   }
 }
