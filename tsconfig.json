@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es5",
+    "lib": ["es5", "dom"],
+    "baseUrl": "./cypress/",
+    "types": ["cypress", "node"],
+    "esModuleInterop": true
+  },
+  "include": ["cypress/e2e/*.ts", "cypress/e2e/**/*.feature"]
+}

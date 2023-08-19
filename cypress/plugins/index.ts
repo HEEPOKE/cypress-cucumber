@@ -1,9 +1,11 @@
-import "@cypress/code-coverage/support";
-import cucumber from "cypress-cucumber-preprocessor";
+const browserify = require("@cypress/browserify-preprocessor");
+const cucumber = require("cypress-cucumber-preprocessor").default;
 
-module.exports = (on: any, config: any) => {
-  on("file:preprocessor", cucumber());
-  on("task", require("@cypress/code-coverage/task"));
+module.exports = (on, config) => {
+  const options = {
+    ...browserify.defaultOptions,
+    typescript: require.resolve("typescript"),
+  };
 
-  return config;
+  on("file:preprocessor", cucumber(options));
 };
