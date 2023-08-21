@@ -18,6 +18,7 @@
   "devDependencies": {
     "@badeball/cypress-cucumber-preprocessor": "^18.0.4",
     "@bahmutov/cypress-esbuild-preprocessor": "^2.2.0",
-    "cypress": "^12.17.4"
+    "cypress": "^12.17.4",
+    "typescript": "^5.1.6"
   }
 }

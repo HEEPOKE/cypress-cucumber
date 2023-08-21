@@ -1,16 +1,16 @@
 /// <reference types="cypress" />
 
-const {
+import {
   Given,
   When,
   Then,
-} = require("@badeball/cypress-cucumber-preprocessor");
+} from "@badeball/cypress-cucumber-preprocessor";
 
 Given("I open the YouTube website", () => {
   cy.visit(Cypress.env("baseUrl"));
 });
 
-When("I search for {string}", (searchQuery) => {
+When("I search for {string}", (searchQuery: string) => {
   cy.get('input[name="search_query"]').type(searchQuery);
   cy.get('button[id="search-icon-legacy"]').click();
 });

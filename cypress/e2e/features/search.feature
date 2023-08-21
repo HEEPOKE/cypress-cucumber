@@ -5,5 +5,5 @@ Feature: YouTube Search
 
   Scenario: Searching for a video
     Given I open the YouTube website
-    When I search for "Cypress E2E testing"
+    When I search for "suzume"
     Then I should see search results

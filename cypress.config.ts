@@ -6,7 +6,7 @@ const { createEsbuildPlugin } = require("@badeball/cypress-cucumber-preprocessor
 module.exports = defineConfig({
   e2e: {
     specPattern: "cypress/e2e/features/*.feature",
-    defaultCommandTimeout: 10000,
+    // defaultCommandTimeout: 10000,
     experimentalStudio: false,
     chromeWebSecurity: false,
     supportFile: false,
