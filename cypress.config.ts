@@ -7,8 +7,8 @@ module.exports = defineConfig({
   projectId: '3ijib6',
   e2e: {
     specPattern: "cypress/e2e/features/*.feature",
-    supportFile: "cypress/support/e2e.ts.",
-    // supportFile: false,
+    // supportFile: "cypress/support/e2e.ts.",
+    supportFile: false,
     // defaultCommandTimeout: 10000,
     experimentalStudio: true,
     chromeWebSecurity: false,
