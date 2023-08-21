@@ -7,3 +7,4 @@ Feature: YouTube Search
     Given I open the YouTube website
     When I search for "suzume ost"
     Then I should see search results
+    And I play the video "Suzume (feat. Toaka)"

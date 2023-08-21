@@ -18,3 +18,8 @@ When("I search for {string}", (searchQuery: string) => {
 Then("I should see search results", () => {
   cy.get("ytd-item-section-renderer").should("be.visible");
 });
+
+Then("I play the video {string}", (videoTitle: string) => {
+  cy.contains(videoTitle).click();
+  cy.get("video").should("be.visible");
+});
