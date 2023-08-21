@@ -1,6 +1,6 @@
 # cypress-cucumber
 
-## Install
+## Install Dependencies
 
 ```bash
 yarn
