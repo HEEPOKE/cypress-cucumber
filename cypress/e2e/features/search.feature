@@ -5,5 +5,5 @@ Feature: YouTube Search
 
   Scenario: Searching for a video
     Given I open the YouTube website
-    When I search for "suzume"
+    When I search for "suzume ost"
     Then I should see search results
