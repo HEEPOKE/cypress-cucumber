@@ -7,9 +7,10 @@ module.exports = defineConfig({
   projectId: '3ijib6',
   e2e: {
     specPattern: "cypress/e2e/features/*.feature",
-    supportFile: false,
+    supportFile: "cypress/support/e2e.ts.",
+    // supportFile: false,
     // defaultCommandTimeout: 10000,
-    experimentalStudio: false,
+    experimentalStudio: true,
     chromeWebSecurity: false,
     viewportWidth: 1920,
     viewportHeight: 1080,
